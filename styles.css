@@ -16,20 +16,22 @@ body {
 
 /* Navegação */
 .navbar {
+    background: url('./assets/bg.png') no-repeat center center/cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #8B4513; /* Cor marrom árabe */
+    background-color: #f8f8f8; /* Cor marrom árabe */
     position: relative;
 }
 
 .logo a {
     font-family: 'Times New Roman', Times, serif;
-    color:#000000;
+    color:#ffffff;
     font-size: 24px;
     text-decoration: none;
     font-weight: bold;
+   
 }
 
 .container {
@@ -90,12 +92,11 @@ body {
 
 /* Seção Hero */
 #hero {
-    background: url('/assets/bg.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000000;
     text-align: center;
 }
 
@@ -126,6 +127,7 @@ body {
 
 /* Seções */
 .section {
+    
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -140,6 +142,7 @@ body {
 
 /* Sobre */
 .sobre-container {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -157,7 +160,16 @@ body {
 }
 
 /* Menu */
+
+section#menu.section {
+    background: url('./assets/naruto-ramen.gif') no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+}
+
+
 .menu-container {
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -198,7 +210,7 @@ body {
 
 /* Galeria */
 .galeria-container {
-    display: grid;
+    display:inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
